@@ -23,9 +23,9 @@ public class User {
     }
 
     public User(
-        Long id,
-        String name,
-        String email
+        @JsonProperty("id") Long id,
+        @JsonProperty("name") String name,
+        @JsonProperty("email") String email
     ) {
         this.id = id;
         this.name = name;
